@@ -6,95 +6,95 @@ console.log ()
 
         <main id="inicio">
 
-        <section class="presentacion">
-            <div class="presentacion-texto">
+        <section className="presentacion">
+            <div className="presentacion-texto">
                 <h2>Hecho con amor, horneado cada día</h2>
                 <p>
                     Disfruta del auténtico sabor del pan artesanal,
                     preparado con ingredientes frescos y de calidad.
                 </p>
-                <a href="#productos" class="boton">Ver productos</a>
+                <a href="#productos" className="boton">Ver productos</a>
             </div>
 
         </section>
 
-        <section id="productos" class="productos">
+        <section id="productos" className="productos">
             <h2>Nuestro catálogo</h2>
-            <p class="subtitulo">Descubre nuestras deliciosas variedades</p>
+            <p className="subtitulo">Descubre nuestras deliciosas variedades</p>
 
-            <div class="categorias">
+            <div className="categorias">
                 <span>Todos</span>
                 <span>Panes</span>
                 <span>Pasteles</span>
                 <span>Postres</span>
             </div>
 
-            <div class="galeria">
+            <div className="galeria">
 
-                <article class="producto">
+                <article className="producto">
     
-                    <div class="producto-info">
+                    <div className="producto-info">
                         <h3>Pan francés</h3>
                         <p>Pan tradicional, crujiente por fuera y suave por dentro.</p>
-                        <div class="precio">
+                        <div className="precio">
                             <strong>S/ 0.50</strong>
                             <button type="button">Seleccionar</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="producto">
+                <article className="producto">
                 
-                    <div class="producto-info">
+                    <div className="producto-info">
                         <h3>Croissant</h3>
                         <p>Delicioso pan de hojaldre con mantequilla.</p>
-                        <div class="precio">
+                        <div className="precio">
                             <strong>S/ 3.50</strong>
                             <button type="button">Seleccionar</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="producto">
+                <article className="producto">
     
-                    <div class="producto-info">
+                    <div className="producto-info">
                         <h3>Dona glaseada</h3>
                         <p>Suave dona cubierta de un dulce glaseado.</p>
-                        <div class="precio">
+                        <div className="precio">
                             <strong>S/ 4.00</strong>
                             <button type="button">Seleccionar</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="producto">
+                <article className="producto">
             
-                    <div class="producto-info">
+                    <div className="producto-info">
                         <h3>Torta de chocolate</h3>
                         <p>Bizcocho húmedo con una deliciosa crema de chocolate.</p>
-                        <div class="precio">
+                        <div className="precio">
                             <strong>S/ 8.00</strong>
                             <button type="button">Seleccionar</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="producto">
-                    <div class="producto-info">
+                <article className="producto">
+                    <div className="producto-info">
                         <h3>Galletas artesanales</h3>
                         <p>Galletas crocantes con chispas de chocolate.</p>
-                        <div class="precio">
+                        <div className="precio">
                             <strong>S/ 2.50</strong>
                             <button type="button">Seleccionar</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="producto">
-                    <div class="producto-info">
+                <article className="producto">
+                    <div className="producto-info">
                         <h3>Muffin de vainilla</h3>
                         <p>Esponjoso muffin con un delicado sabor a vainilla.</p>
-                        <div class="precio">
+                        <div className="precio">
                             <strong>S/ 4.50</strong>
                             <button type="button">Seleccionar</button>
                         </div>
@@ -104,7 +104,7 @@ console.log ()
             </div>
         </section>
 
-        <section id="nosotros" class="nosotros">
+        <section id="nosotros" className="nosotros">
             <h2>Elaboramos con pasión</h2>
             <p>
                 En Panadería "Delicia" creemos que cada producto
