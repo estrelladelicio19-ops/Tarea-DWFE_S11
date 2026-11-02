@@ -1,0 +1,320 @@
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf6ef;
+    color: #493326;
+}
+
+/* ENCABEZADO */
+
+header {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #4b3024;
+    color: #fff8eb;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+header h1 span {
+    color: #e8bd78;
+}
+
+header p {
+    margin-top: 8px;
+    color: #e8d8c5;
+}
+
+/* MENÚ */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 18px;
+    background-color: #e9d6bd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #493326;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a66a32;
+}
+
+/* PRESENTACIÓN */
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: #f3e6d4;
+}
+
+.presentacion-texto {
+    max-width: 500px;
+}
+
+.presentacion-texto h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #573a29;
+}
+
+.presentacion-texto p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.presentacion img {
+    width: 45%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #70452d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #a66a32;
+    transform: translateY(-4px);
+}
+
+/* CATÁLOGO */
+
+.productos {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 32px;
+    color: #573a29;
+}
+
+.subtitulo {
+    margin-top: 12px;
+    color: #92745d;
+}
+
+/* CATEGORÍAS */
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.categorias span {
+    padding: 10px 22px;
+    background-color: #ead8c2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.categorias span:hover {
+    background-color: #70452d;
+    color: white;
+}
+
+/* GALERÍA DE PRODUCTOS */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+}
+
+/* TARJETAS */
+
+.producto {
+    background-color: #fffdf9;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(75, 48, 36, 0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(75, 48, 36, 0.18);
+}
+
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.producto:hover img {
+    transform: scale(1.06);
+}
+
+.producto-info {
+    padding: 20px;
+}
+
+.producto-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.producto-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #806b5b;
+    min-height: 45px;
+}
+
+/* PRECIO Y BOTÓN */
+
+.precio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.precio strong {
+    font-size: 19px;
+    color: #a66a32;
+}
+
+.precio button {
+    border: none;
+    padding: 10px 18px;
+    background-color: #70452d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.precio button:hover {
+    background-color: #b17b43;
+    transform: translateY(-3px);
+}
+
+.precio button:active {
+    transform: scale(0.95);
+}
+
+/* NOSOTROS */
+
+.nosotros {
+    text-align: center;
+    padding: 55px 12%;
+    background-color: #ead8c2;
+}
+
+.nosotros h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.nosotros p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    color: #725b49;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    background-color: #4b3024;
+    color: #fff8eb;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #d9c5ad;
+    margin-top: 25px;
+}
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 900px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .presentacion {
+        padding: 45px 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentacion-texto h2 {
+        font-size: 30px;
+    }
+
+    .presentacion img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .productos {
+        padding: 45px 6%;
+    }
+}
